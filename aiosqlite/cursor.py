@@ -1,7 +1,7 @@
 # Copyright 2022 Amethyst Reese
 # Licensed under the MIT license
 
-import sqlite3
+from sqlcipher3 import dbapi2 as sqlite3
 from typing import (
     Any,
     AsyncIterator,

@@ -3,7 +3,7 @@
 
 """asyncio bridge to the standard sqlite3 module"""
 
-from sqlite3 import (  # pylint: disable=redefined-builtin
+from sqlcipher3.dbapi2 import (  # pylint: disable=redefined-builtin
     DatabaseError,
     Error,
     IntegrityError,

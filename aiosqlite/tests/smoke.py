@@ -1,9 +1,9 @@
 # Copyright 2022 Amethyst Reese
 # Licensed under the MIT license
 import asyncio
-import sqlite3
+from sqlcipher3 import dbapi2 as sqlite3
 from pathlib import Path
-from sqlite3 import OperationalError
+from sqlcipher3.dbapi2 import OperationalError
 from threading import Thread
 from unittest import IsolatedAsyncioTestCase as TestCase, SkipTest
 
